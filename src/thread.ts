@@ -68,7 +68,7 @@ export abstract class TaskScheduler<T extends Runnable> {
 }
 
 /**
- * Multi-threading scheduler. Similar to the internal Task Scheduler.
+ * Multi-coroutine scheduler. Similar to the internal Task Scheduler.
  */
 export class Scheduler extends TaskScheduler<Runnable> {
 	private thread: thread = this.createThread();
