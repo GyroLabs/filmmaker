@@ -1,24 +1,26 @@
 /// <reference types="@rbxts/types/plugin" />
 
-import { Scheduler } from "thread";
-import { Globals, Schedulers, THREAD_MAP } from "globals";
-import { FAnimation } from "./animation";
-import { Workspace } from "@rbxts/services";
-import { UI } from "./ui";
+export {}
 
-Globals.plugin = plugin;
-THREAD_MAP.set(coroutine.running(), "Main Thread");
+// import { Scheduler } from 'thread'
+// // import { Globals, Schedulers, THREAD_MAP } from 'globals'
+// import { FAnimation } from './animation'
+// import { Workspace } from '@rbxts/services'
+// // import { UI } from "./ui";
 
-const animationScheduler = new Scheduler("Animation Thread");
-Schedulers.ANIMATION = animationScheduler;
+// // Globals.plugin = plugin
+// // THREAD_MAP.set(coroutine.running(), 'Main Thread')
 
-const uiScheduler = new Scheduler("UI Thread");
-Schedulers.UI = uiScheduler;
+// // const animationScheduler = new Scheduler('Animation Thread')
+// // Schedulers.ANIMATION = animationScheduler
 
-new FAnimation(Workspace);
+// // const uiScheduler = new Scheduler('UI Thread')
+// // Schedulers.UI = uiScheduler
 
-animationScheduler.execute(() => {});
+// // new FAnimation(Workspace)
 
-uiScheduler.execute(() => {
-	const ui = new UI();
-});
+// // animationScheduler.execute(() => {})
+
+// // uiScheduler.execute(() => {
+// // 	const ui = new UI();
+// // });
