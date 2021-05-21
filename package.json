@@ -22,7 +22,7 @@
     "@rbxts/cubic-bezier": "^1.0.2",
     "@rbxts/roact": "^1.3.0-ts.10",
     "@rbxts/services": "^1.1.2",
-    "@rbxts/types": "^1.0.482",
+    "@rbxts/types": "^1.0.486",
     "roblox-ts": "^1.1.1",
     "ts-standard": "^10.0.0",
     "typedoc": "^0.20.30",
